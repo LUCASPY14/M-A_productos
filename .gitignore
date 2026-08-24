@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+venv/
+env/
+.venv/
+
+basededatospostgresql/postgres_data/
+
+*.sqlite3
+.env

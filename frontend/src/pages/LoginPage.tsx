@@ -25,37 +25,37 @@ export function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-50">
+    <div className="flex min-h-screen items-center justify-center bg-brand-50">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-sm rounded-lg border border-slate-200 bg-white p-8 shadow-sm"
+        className="w-full max-w-sm rounded-lg border border-brand-200 bg-white p-8 shadow-sm"
       >
-        <h1 className="mb-6 text-xl font-semibold text-slate-800">M&A Productos</h1>
+        <img src="/logo.png" alt="M&A Productos Artesanales" className="mx-auto mb-6 h-28 w-auto" />
         <div className="mb-4">
-          <label className="mb-1 block text-sm font-medium text-slate-600">Usuario</label>
+          <label className="mb-1 block text-sm font-medium text-brand-700">Usuario</label>
           <input
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
             autoFocus
-            className="w-full rounded border border-slate-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
+            className="w-full rounded border border-brand-200 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none"
           />
         </div>
         <div className="mb-6">
-          <label className="mb-1 block text-sm font-medium text-slate-600">Contraseña</label>
+          <label className="mb-1 block text-sm font-medium text-brand-700">Contraseña</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="w-full rounded border border-slate-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
+            className="w-full rounded border border-brand-200 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none"
           />
         </div>
         {error && <p className="mb-4 text-sm text-red-600">{error}</p>}
         <button
           type="submit"
           disabled={submitting}
-          className="w-full rounded bg-blue-600 py-2 text-sm font-medium text-white hover:bg-blue-700 disabled:opacity-50"
+          className="w-full rounded bg-brand-600 py-2 text-sm font-medium text-white hover:bg-brand-700 disabled:opacity-50"
         >
           {submitting ? 'Ingresando...' : 'Ingresar'}
         </button>

@@ -35,16 +35,16 @@ export function CrudPage<T extends { id: number }>({
   return (
     <div>
       <div className="mb-4 flex items-center justify-between">
-        <h1 className="text-xl font-semibold text-slate-800">{title}</h1>
+        <h1 className="text-xl font-semibold text-brand-900">{title}</h1>
         <button
           onClick={() => setCreating(true)}
-          className="rounded bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          className="rounded bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-700"
         >
           Nuevo
         </button>
       </div>
 
-      {loading && <p className="text-sm text-slate-500">Cargando...</p>}
+      {loading && <p className="text-sm text-brand-500">Cargando...</p>}
       {error && <p className="text-sm text-red-600">{error}</p>}
       {!loading && !error && (
         <CrudTable items={items} columns={columns} onEdit={setEditing} onDelete={handleDelete} />

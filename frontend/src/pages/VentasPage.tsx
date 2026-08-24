@@ -7,7 +7,7 @@ export function VentasPage() {
   const { items: facturas, loading: loadingFacturas } = useCrud<Factura>('facturas')
 
   if (loadingProductos || loadingFacturas) {
-    return <p className="text-sm text-slate-500">Cargando...</p>
+    return <p className="text-sm text-brand-500">Cargando...</p>
   }
 
   return (

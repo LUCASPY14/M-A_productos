@@ -19,13 +19,13 @@ export function Layout() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-          <span className="font-semibold text-slate-800">M&A Productos</span>
+    <div className="min-h-screen bg-brand-50">
+      <header className="border-b border-brand-200 bg-white">
+        <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-2">
+          <img src="/logo-compact.png" alt="M&A Productos Artesanales" className="h-14 w-auto" />
           <button
             onClick={handleLogout}
-            className="text-sm text-slate-500 hover:text-slate-800"
+            className="text-sm text-brand-600 hover:text-brand-800"
           >
             Cerrar sesión
           </button>
@@ -38,8 +38,8 @@ export function Layout() {
               className={({ isActive }) =>
                 `border-b-2 px-3 py-2 text-sm font-medium ${
                   isActive
-                    ? 'border-blue-600 text-blue-600'
-                    : 'border-transparent text-slate-500 hover:text-slate-800'
+                    ? 'border-brand-600 text-brand-700'
+                    : 'border-transparent text-brand-500/70 hover:text-brand-700'
                 }`
               }
             >

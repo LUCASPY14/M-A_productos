@@ -7,7 +7,7 @@ export function RecetasPage() {
   const { items: ingredientes, loading: loadingIngredientes } = useCrud<Ingrediente>('ingredientes')
 
   if (loadingProductos || loadingIngredientes) {
-    return <p className="text-sm text-slate-500">Cargando...</p>
+    return <p className="text-sm text-brand-500">Cargando...</p>
   }
 
   return (

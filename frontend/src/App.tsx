@@ -7,6 +7,7 @@ import { IngredientesPage } from './pages/IngredientesPage'
 import { LoginPage } from './pages/LoginPage'
 import { ProductosPage } from './pages/ProductosPage'
 import { RecetasPage } from './pages/RecetasPage'
+import { ReportesPage } from './pages/ReportesPage'
 import { VentasPage } from './pages/VentasPage'
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/recetas" element={<RecetasPage />} />
             <Route path="/ventas" element={<VentasPage />} />
             <Route path="/facturas" element={<FacturasPage />} />
+            <Route path="/reportes" element={<ReportesPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

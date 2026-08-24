@@ -8,7 +8,7 @@ class ItemRecetaInline(admin.TabularInline):
 
 @admin.register(Producto)
 class ProductoAdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'precio_venta', 'activo', 'creado')
+    list_display = ('nombre', 'precio_venta', 'costo_receta', 'margen', 'activo', 'creado')
     search_fields = ('nombre',)
     list_filter = ('activo',)
     inlines = [ItemRecetaInline]

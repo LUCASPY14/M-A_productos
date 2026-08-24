@@ -5,6 +5,9 @@ export interface Producto {
   precio_venta: string
   activo: boolean
   creado: string
+  costo_receta: string
+  margen: string
+  margen_porcentual: string
 }
 
 export interface Ingrediente {
@@ -12,6 +15,9 @@ export interface Ingrediente {
   nombre: string
   unidad: string
   stock_actual: string
+  costo_compra: string
+  cantidad_compra: string
+  costo_unitario: string
   creado: string
 }
 

@@ -7,6 +7,7 @@ const links = [
   { to: '/recetas', label: 'Recetas' },
   { to: '/ventas', label: 'Ventas' },
   { to: '/facturas', label: 'Facturas' },
+  { to: '/reportes', label: 'Reportes' },
 ]
 
 export function Layout() {
